@@ -1,6 +1,6 @@
 import logo from './logo.png'
 import copyright from './Copyright.png'
-import profesional from './profesional.png'
+import profesional from './Profesional.png'
 import homepicture from './HomePicture.webp'
 import arttext from './arttext.png'
 
