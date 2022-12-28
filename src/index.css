@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.text-selectable {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.color-all {
+  background: linear-gradient(
+    300.55deg,
+    #72d5ff -20.56%,
+    #00b2ff 50.23%,
+    #54ccff 121.4%
+  );
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-dancingscript {
+  font-family: 'Dancing Script', cursive;
+}
+
+.text-gradient1 {
+  background: linear-gradient(149.69deg, #7000ff 23.73%, #ff005c 93.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.love-color {
+  color: #ee00ab;
+}
+
+.purple-color {
+  color: #5200ff;
+}
+
+.bg-navbar {
+  background-color: #b3e3ff;
+}
+
+.bg-gallery {
+  background: linear-gradient(65.39deg, #8000ff -26.2%, #bc79ff 126.5%);
+}
+
+.color-white {
+  color: white;
+}
+.color-white-art {
+  color: white;
+  -webkit-text-fill-color: white;
+}
+
+.Artext-color {
+  background: linear-gradient(150.77deg, #001aff 22.3%, #00d1ff 79.55%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1024px) {
+  .art-img:hover {
+    scale: 1.01;
+    box-shadow: 0 0 15px rgb(185, 110, 255);
+  }
+
+  .nav-text:hover {
+    color: rgb(66, 66, 66);
+    scale: 1.04;
+  }
+}
+
+.show {
+  animation-name: showanim;
+  animation-duration: 400ms;
+  opacity: 1;
+}
+
+.hide {
+  animation-name: hideanim;
+  animation-duration: 400ms;
+  opacity: 0;
+}
+
+@keyframes showanim {
+  from {
+    transform: translateY(-40%);
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hideanim {
+  to {
+    transform: translateY(40%);
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.art-img {
+  transition: 200ms;
+}
+
+.art-img:active {
+  scale: 1.01;
+  box-shadow: 0 0 15px rgb(185, 110, 255);
+}
+
+.nav-text {
+  color: rgb(94, 94, 94);
+  transition: 200ms;
+}
+
+.nav-text:active {
+  color: rgb(66, 66, 66);
+  scale: 1.04;
+}
+
+.hide-observe {
+  opacity: 0;
+}
+
+.show-observe {
+  opacity: 1;
+  animation-duration: 400ms;
+  animation-name: observeanim;
+}
+
+@keyframes observeanim {
+  from {
+    scale: 0.9;
+    opacity: 0;
+  }
+
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
