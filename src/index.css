@@ -147,6 +147,16 @@ img {
   scale: 1.04;
 }
 
+.nav-text-mobile {
+  color: rgb(190, 190, 190);
+  transition: 200ms;
+}
+
+.nav-text-mobile:active {
+  color: rgb(219, 219, 219);
+  scale: 1.04;
+}
+
 .navmenu-color {
   background-color: rgb(126, 126, 126);
 }

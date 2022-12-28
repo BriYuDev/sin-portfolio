@@ -60,7 +60,7 @@ class Navbar extends Component {
                 key={link.id}
                 className={`${
                   index !== NavLinks.length - 1 ? 'mb-[5px]' : 'mb-0'
-                } font-poppins font-[500] text-[20px] nav-text`}
+                } font-poppins font-[500] text-[20px] nav-text-mobile`}
               >
                 <a href={link.id}>{link.title}</a>
               </li>
