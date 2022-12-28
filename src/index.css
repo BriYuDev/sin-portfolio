@@ -88,6 +88,16 @@ img {
     color: rgb(66, 66, 66);
     scale: 1.04;
   }
+
+  .ig-logo:hover {
+    filter: invert(10%);
+    scale: 1.03;
+  }
+
+  .ig-logo-mobile:hover {
+    scale: 1.03;
+    filter: invert(40%);
+  }
 }
 
 .show {
@@ -232,4 +242,24 @@ img {
 .opened-menu {
   opacity: 1;
   transform: translateY(0);
+}
+
+.ig-logo {
+  transition: 300ms;
+  filter: invert(30%);
+}
+
+.ig-logo-mobile {
+  transition: 300ms;
+  filter: invert(60%);
+}
+
+.ig-logo-mobile:active {
+  scale: 1.03;
+  filter: invert(40%);
+}
+
+.ig-logo:active {
+  filter: invert(10%);
+  scale: 1.03;
 }

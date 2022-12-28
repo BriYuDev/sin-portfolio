@@ -1,5 +1,4 @@
 import { art11, art12, art13, art14, art15, art16 } from "../assets/Art1"
-import { art21, art22, art23, art24, art25, art26, art27 } from "../assets/Art2"
 
 
 export const NavLinks = [
