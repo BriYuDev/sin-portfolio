@@ -147,6 +147,10 @@ img {
   scale: 1.04;
 }
 
+.navmenu-color {
+  background-color: rgb(126, 126, 126);
+}
+
 .hide-observe {
   opacity: 0;
 }
@@ -167,4 +171,55 @@ img {
     scale: 1;
     opacity: 1;
   }
+}
+
+.closed > .line-first,
+.opened > .line-first {
+  transition: 400ms;
+}
+
+.closed > .line-second,
+.opened > .line-second {
+  transition: 400ms;
+}
+
+.closed > .line-third,
+.opened > .line-third {
+  transition: 400ms;
+}
+
+.opened > .line-first {
+  transform: translate(0, 12px) rotate(37.31deg);
+}
+.opened > .line-second {
+  opacity: 0;
+  scale: 0.9;
+}
+
+.opened > .line-third {
+  transform: translate(0, -12px) rotate(-37.31deg);
+}
+
+.menu-color {
+  background: linear-gradient(
+    155.83deg,
+    #1758ff -6.75%,
+    #670098 99.99%,
+    #5e00bc 100%
+  );
+}
+
+.closed-menu,
+.opened-menu {
+  transition: 400ms;
+}
+
+.closed-menu {
+  opacity: 0;
+  transform: translateY(-200%);
+}
+
+.opened-menu {
+  opacity: 1;
+  transform: translateY(0);
 }
